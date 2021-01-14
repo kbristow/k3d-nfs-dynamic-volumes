@@ -1,5 +1,6 @@
 # NFS Dynamic Volumes with K3D
-This shows how to setup dynamic provisioning of nfs volumes with k3d. The nfs PV's are provisioned using the [nfs-ganesha-serverand-external-provisioner](https://github.com/kubernetes-sigs/nfs-ganesha-server-and-external-provisioner) which is backed
+This shows how to setup dynamic provisioning of nfs volumes with k3d allowing you to have ReadWriteMany volumes in your k3d cluster.
+The nfs PV's are provisioned using the [nfs-ganesha-serverand-external-provisioner](https://github.com/kubernetes-sigs/nfs-ganesha-server-and-external-provisioner) which is backed
 by an initial PV created with [local-path-provisioner](https://github.com/rancher/local-path-provisioner). 
 The instructions below show how to configure this setup using the default settings from the nfs-ganesha-server. The README on the nfs-ganesha-server has more details if you wish to modify the config of the nfs server or provisioner.
 
